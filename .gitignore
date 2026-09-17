@@ -1,11 +1,24 @@
+# Build outputs & dependencies
 .next/
-tsconfig.tsbuildinfo
 node_modules/
-.env
-.env.local
-.env.*
-!.env.example
+tsconfig.tsbuildinfo
+*.log
+
+# Python cache & local data
 __pycache__/
 *.pyc
 backend/data/
+backend/__pycache__/
 
+# Environment & Secret files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*
+backend/.env
+
+# Allow environment example files
+!.env.example
+!backend/.env.example
